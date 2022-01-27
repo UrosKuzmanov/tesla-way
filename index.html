@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./font/poppins/stylesheet.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Tesla-2-1.png" alt="">
+            <span>Tesla Way</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="close-nav"> <i class="fa fa-times"> <span>Close</span></i></li>
+                <li><a href="">Pocetna</a></li>
+                <li><a href="">Vesti</a></li>
+                <li><a href="">Destinaceje</a></li>
+                <li><a href="">Kontakt</a></li>
+                <li><a href="">O Nama</a></li>
+            </ul>
+        </nav>
+        <div class="admin-menu-btn">
+            <div class="admin-btn"><i class="fas fa-user"></i></div>
+            <div class="ham-menu">
+                <span class="first"></span>
+                <span class="sec"></span>
+                <span class="thrd"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="map-wrapper">
+        <div id="map"></div>
+        <div class="map-selector">
+            <form>
+                <div class="map-zone"> <select class="select" name="" id="">
+                        <option disabled selected>Region</option>
+                        <option value="Beograd">Beograd</option>
+                        <option value="Novi Sad">Novi Sad</option>
+                        <option value="Sumadija">Sumadija</option>
+                    </select></div>
+                <div class="map-type">
+                    <select class="select" name="" id="">
+                        <option value="Muzejo">Muzejo</option>
+                        <option value="Hoteli">Hoteli</option>
+                        <option value="Restorani">Restorani</option>
+                    </select>
+                </div>
+                <button>Apply</button>
+            </form>
+        </div>
+    </section>
+
+    <section class=" section news-section">
+        <div class=" section-wrapper news-wrapper">
+            <div class=" section-title news-title">
+                <h2>Najnovije Vesti</h2>
+                <p>Sve novosti iz kulturnog i naucnog zivota Srbije</p>
+            </div>
+            <div class="news-list">
+                <div class="news">
+                    <img src="./image/15be889877b816121971ae227f49312c.jpg" alt="">
+                    <div class="news-heading">
+                        <p>Beograd</p>
+                        <h3>Ko su super heroji Festivala nauke?</h3>
+                        <p>Festival nauke odrzava se...</p>
+                    </div>
+                </div>
+                <div class="news"><img src="./image/1a4c1a25d7e929ddb959e3fd9243fbff.jpg" alt="">
+                    <div class="news-heading">
+                        <p>Beograd</p>
+                        <h3>Ko su super heroji Festivala nauke?</h3>
+                        <p>Festival nauke odrzava se...</p>
+                    </div>
+                </div>
+                <div class="news"><img src="./image/3969315e2b29c2219c57fe65ada40d17.jpg" alt="">
+                    <div class="news-heading">
+                        <p>Beograd</p>
+                        <h3>Ko su super heroji Festivala nauke?</h3>
+                        <p>Festival nauke odrzava se...</p>
+                    </div>
+                </div>
+                <div class="news"><img src="./image/e833437f1a43aeef829a4cec0a2545e7.jpg" alt="">
+                    <div class="news-heading">
+                        <p>Beograd</p>
+                        <h3>Ko su super heroji Festivala nauke?</h3>
+                        <p>Festival nauke odrzava se...</p>
+                    </div>
+                </div>
+                <div class="news"><img src="./image/676a552df1a072d55351632f773bdf3d.jpg" alt="">
+                    <div class="news-heading">
+                        <p>Beograd</p>
+                        <h3>Ko su super heroji Festivala nauke?</h3>
+                        <p>Festival nauke odrzava se...</p>
+                    </div>
+                </div>
+                <div class="news"><img src="./image/a91e92b7dd1c9a693c03b3ca047e814f.jpg" alt="">
+                    <div class="news-heading">
+                        <p>Beograd</p>
+                        <h3>Ko su super heroji Festivala nauke?</h3>
+                        <p>Festival nauke odrzava se...</p>
+                    </div>
+                </div>
+                <div class="news"><img src="./image/cd380708fa2201f0a7706386675b489b.jpg" alt="">
+                    <div class="news-heading">
+                        <p>Beograd</p>
+                        <h3>Ko su super heroji Festivala nauke?</h3>
+                        <p>Festival nauke odrzava se...</p>
+                    </div>
+                </div>
+                <div class="news"><img src="./image/233c2b924d14d3a8ecc484d55ef0fde6.jpg" alt="">
+                    <div class="news-heading">
+                        <p>Beograd</p>
+                        <h3>Ko su super heroji Festivala nauke?</h3>
+                        <p>Festival nauke odrzava se...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section des-section">
+        <div class="section-wrapper des-wrapper">
+            <div class=" section-title news-title">
+                <h2>Sta Posetiti?</h2>
+                <p>Odaberite lokaciju i ucinite svoj zivot zanimljivim</p>
+            </div>
+            <div class="dest-list">
+                <div class="dest">
+                    <div class="img-wrapper">
+                        <img src="./image/des1.jpg" alt="">
+                    </div>
+                    <div class="des-info">
+                        <h3>Narodno Pozoriste</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <div class="des-address">
+                            <i class="far fa-map"></i>
+                            J. Jovanovića Zmaja 1, Sremska Kamenica
+                        </div>
+                    </div>
+                    <div class="dest-footer">
+                        <p>Muzeji</p>
+                        <span><i class="fas fa-map-marker-alt"></i>Novi Sad</span>
+                    </div>
+                </div>
+                <div class="dest">
+                    <div class="img-wrapper"> <img src="./image/des2.jpg" alt=""></div>
+                    <div class="des-info">
+                        <h3>Narodno Pozoriste</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <div class="des-address">
+                            <i class="far fa-map"></i>
+                            J. Jovanovića Zmaja 1, Sremska Kamenica
+                        </div>
+                    </div>
+                    <div class="dest-footer">
+                        <p>Muzeji</p>
+                        <span><i class="fas fa-map-marker-alt"></i>Novi Sad</span>
+                    </div>
+                </div>
+                <div class="dest">
+                    <div class="img-wrapper"><img src="./image/des3.jpg" alt=""></div>
+                    <div class="des-info">
+                        <h3>Narodno Pozoriste</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <div class="des-address">
+                            <i class="far fa-map"></i>
+                            J. Jovanovića Zmaja 1, Sremska Kamenica
+                        </div>
+                    </div>
+                    <div class="dest-footer">
+                        <p>Muzeji</p>
+                        <span><i class="fas fa-map-marker-alt"></i>Novi Sad</span>
+                    </div>
+                </div>
+                <div class="dest">
+                    <div class="img-wrapper"><img src="./image/des4.jpg" alt=""></div>
+                    <div class="des-info">
+                        <h3>Narodno Pozoriste</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <div class="des-address">
+                            <i class="far fa-map"></i>
+                            J. Jovanovića Zmaja 1, Sremska Kamenica
+                        </div>
+                    </div>
+                    <div class="dest-footer">
+                        <p>Muzeji</p>
+                        <span><i class="fas fa-map-marker-alt"></i>Novi Sad</span>
+                    </div>
+                </div>
+                <div class="dest">
+                    <div class="img-wrapper"><img src="./image/des5.jpg" alt=""></div>
+                    <div class="des-info">
+                        <h3>Narodno Pozoriste</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <div class="des-address">
+                            <i class="far fa-map"></i>
+                            J. Jovanovića Zmaja 1, Sremska Kamenica
+                        </div>
+                    </div>
+                    <div class="dest-footer">
+                        <p>Muzeji</p>
+                        <span><i class="fas fa-map-marker-alt"></i>Novi Sad</span>
+                    </div>
+                </div>
+                <div class="dest">
+                    <div class="img-wrapper"><img src="./image/des6.jpg" alt=""></div>
+                    <div class="des-info">
+                        <h3>Narodno Pozoriste</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </p>
+                        <div class="des-address">
+                            <i class="far fa-map"></i>
+                            J. Jovanovića Zmaja 1, Sremska Kamenica
+                        </div>
+                    </div>
+                    <div class="dest-footer">
+                        <p>Muzeji</p>
+                        <span><i class="fas fa-map-marker-alt"></i>Novi Sad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section slide-section">
+        <img src="./image/wid.jpg" alt="">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./image/des1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/des2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/des3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/des4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/des5.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <div class="filter control"><i class="fas fa-sort-alpha-down"></i></div>
+    <div class="calendar control"><i class="far fa-calendar-alt"></i></div>
+    
+</body>
+<script src="./node_modules/leaflet/dist/leaflet.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="./js.js"></script>
+
+</html>

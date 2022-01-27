@@ -1,0 +1,16 @@
+{
+  "name": "home-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "uros",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "leaflet": "^1.7.1",
+    "swiper": "^7.4.1"
+  }
+}
